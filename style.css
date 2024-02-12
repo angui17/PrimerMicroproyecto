@@ -1,0 +1,100 @@
+.todo {
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input {
+  background-color:  white;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#matriz-selector {
+  border-radius: 15px;
+  height: 30px;
+  width: 180px;
+  text-align: center;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+}
+
+#puntaje {
+  background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+label {
+  font-size: 20px;
+}
+
+h1, h2, label {
+  font-weight: bold;
+}
+
+td {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+button {
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.seleccionado {
+  background-color: yellow;
+  border-radius: 50px;
+}
+
+td,
+th {
+  background-color:  #d0d5dc;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+
+th {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  .todo {
+    width: 95%;
+  }
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+  .contenido,
+  .contenido2 {
+    width: 100%;
+  }
+}

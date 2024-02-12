@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BINGO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Todo -->
+    <div class="todo">
+      <!-- Titulo -->
+      <div>
+        <h1>BINGO</h1>
+      </div>
+
+      <!-- Inputs -->
+      <div class="contenido">
+        <label>
+          Jugador 1:
+          <input
+            type="text"
+            placeholder="Ingrese un nombre..."
+            class="jugadores"
+            id="player1"
+            required
+          />
+          <br />
+          <br />
+        </label>
+
+        <label>
+          Jugador 2:
+          <input
+            type="text"
+            placeholder="Ingrese un nombre..."
+            class="jugadores"
+            id="player2"
+            required
+          />
+          <br />
+          <br />
+        </label>
+
+        <label>
+          Jugador 3:
+          <input
+            type="text"
+            placeholder="Ingrese un nombre..."
+            class="jugadores"
+            id="player3"
+            required
+          />
+          <br />
+          <br />
+        </label>
+
+        <label>
+          Jugador 4:
+          <input
+            type="text"
+            placeholder="Ingrese un nombre..."
+            class="jugadores"
+            id="player4"
+            required
+          />
+          <br />
+          <br />
+        </label>
+      </div>
+
+      <!-- Tamaño del cartón -->
+      <div class="contenido2">
+        <h2>Elije el tamaño del cartón</h2>
+
+        <select id="matriz-selector">
+          <option value="" disabled selected>Selecciona un tamaño</option>
+          <option value="3">3x3</option>
+          <option value="4">4x4</option>
+          <option value="5">5x5</option>
+        </select>
+        <table id="matriz"></table>
+        <br />
+        <br />
+      </div>
+
+      <!-- Boton de inicio que redirecciona a la pagina del primer jugador -->
+      <div>
+        <a href="jugador1.html">
+          <button id="iniciar-juego" disabled>Iniciar el juego</button>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugador 1</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Jugador 2</h1>
+    <table id="carton"></table>
+
+    <br><br>
+    <button id="generar-numero" onclick="generarNumeroAleatorio()">Generar número</button>
+
+
+    <!--Nuevo codigo-->
+
+    <button id="mostrar-puntaje" onclick="mostrarPuntaje()">
+      Mostrar puntaje
+    </button>
+    <button id="ocultar-puntaje" onclick="ocultarPuntaje()" disabled>
+      Ocultar puntaje
+    </button>
+    <a href="index.html"><button>Ir al inicio</button></a>
+    <a href="jugador1.html"><button>Ir a Jugador 1</button></a>
+    <a href="jugador3.html"><button>Ir a jugador 3</button></a>
+    <br><br><br>
+    <div id="puntaje" style="display: none;">
+      <table id="tabla-puntaje">
+        <thead>
+          <tr>
+            <th>Jugador</th>
+            <th>Victorias</th>
+            <th>Puntaje</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-puntaje-body"></tbody>
+      </table>
+
+    <script src="../script.js"></script>
+    <script>
+    window.onload = () => {
+      const tamanio = localStorage.getItem("tamanio");
+      if (tamanio) {
+        generarMatriz(parseInt(tamanio));
+      }
+    };
+  </script>
+</body>
+</html>
